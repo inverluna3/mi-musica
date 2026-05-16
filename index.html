@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Luna Compositor | Sitio Oficial</title>
     <style>
-        /* ESTILOS GENERALES */
+        /* ESTILOS GENERALES (Azul Celeste y Tonos Profundos) */
         * {
             margin: 0;
             padding: 0;
@@ -13,9 +13,18 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #f4f7f6;
-            color: #333;
+            background-color: #87CEEB; /* Azul Celeste */
+            color: #1a2536;
             line-height: 1.6;
+        }
+        a {
+            color: #004080;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #00264d;
         }
         .container {
             width: 90%;
@@ -53,8 +62,6 @@
         }
         .nav-links a { 
             color: #ffffff; 
-            text-decoration: none;
-            font-weight: bold;
         }
 
         /* SECCIÓN HERO (PORTADA) */
@@ -79,12 +86,12 @@
             color: #2c3e50;
         }
 
-        /* CONFIGURACIÓN DE LOS NUEVOS BOTONES */
+        /* CONFIGURACIÓN DE LOS BOTONES EN PARALELO */
         .contenedor-botones-hero {
             display: flex;
             justify-content: center;
             gap: 20px;
-            flex-wrap: wrap; /* Se adapta a celulares poniendo uno abajo del otro si no caben */
+            flex-wrap: wrap;
             max-width: 800px;
             margin: 0 auto;
         }
@@ -98,7 +105,7 @@
             border: 2px solid #ffffff;
             transition: all 0.3s ease;
         }
-        /* Estilo exclusivo Botón WhatsApp (Verde llamativo con pulso) */
+        /* Botón WhatsApp (Verde con animación) */
         .btn-whatsapp {
             background-color: #25d366;
             color: #ffffff !important;
@@ -109,7 +116,7 @@
             background-color: #1ebd58;
             transform: translateY(-2px);
         }
-        /* Estilo exclusivo Botón Nube (Azul oscuro elegante) */
+        /* Botón Nube (Azul oscuro) */
         .btn-nube {
             background-color: #00264d;
             color: #ffffff !important;
@@ -120,7 +127,6 @@
             transform: translateY(-2px);
         }
 
-        /* Animación de pulso para el botón de WhatsApp */
         @keyframes pulso-whatsapp {
             0% { box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); }
             50% { box-shadow: 0 4px 25px rgba(37, 211, 102, 0.8); }
@@ -182,7 +188,7 @@
         .video-link {
             display: inline-block;
             margin-top: 15px;
-            color: #d32f2f; /* Rojo para destacar el enlace de video */
+            color: #d32f2f;
             text-decoration: underline;
         }
 
@@ -204,7 +210,6 @@
             border-radius: 5px;
             font-weight: bold;
             margin-top: 20px;
-            text-decoration: none;
         }
 
         /* FOOTER */
@@ -216,13 +221,11 @@
             color: #ffffff;
         }
 
-        /* RESPONSIVO */
         @media (max-width: 768px) {
             .about-content { grid-template-columns: 1fr; text-align: center;}
             .nav-links { display: none; }
-            .hero h1 { font-size: 2rem; }
         }
-    </style>      
+    </style>
 </head>
 <body>
 
@@ -232,27 +235,26 @@
             <div class="logo">Carlos<span>Luna</span></div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#sobre-mi">Biografía</a></li>
                 <li><a href="#catalog">Catálogo</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- SECCIÓN DE PORTADA (INICIO) -->
+    <!-- PORTADA PRINCIPAL -->
     <section class="hero" id="inicio">
         <div class="container">
-            <h1>Carlos Luna <span>Compositor</span></h1>
-            <p>Escribo letras originales y creo maquetas musicales en diversos géneros listas para ser grabadas por artistas y productoras.</p>
+            <h1>La Letra con Alma, <span>El Sonido del Mañana</span></h1>
+            <p>Compositor venezolano fusionando la lírica tradicional con la innovación de la Inteligencia Artificial musical.</p>
             
-            <!-- CONTENEDOR DE TUS DOS NUEVOS BOTONES -->
             <div class="contenedor-botones-hero">
-                <!-- Botón 1: WhatsApp -->
-                <a href="https://wa.me/584164295853" target="_blank" class="btn-cta btn-whatsapp">
-                    HN010214 💬 ¿Buscas letras? Escríbeme al WhatsApp
+                <!-- BOTÓN WHATSAPP CORREGIDO CON TU NÚMERO -->
+                <a href="https://wa.me/584166069567" target="_blank" class="btn-cta btn-whatsapp">
+                    💬 ¿Buscas letras? Escríbeme al WhatsApp
                 </a>
                 
-                <!-- Botón 2: Nube (Aquí debes cambiar el '#' por el enlace de tu carpeta de Drive/Nube) -->
+                <!-- BOTÓN NUBE (Aquí cambias el '#' por tu enlace de la nube cuando quieras) -->
                 <a href="#" target="_blank" class="btn-cta btn-nube">
                     ☁️ Ver lista de videos en la nube
                 </a>
@@ -260,72 +262,77 @@
         </div>
     </section>
 
-    <!-- SECCIÓN SOBRE MÍ -->
+    <!-- BIOGRAFÍA -->
     <section class="about" id="sobre-mi">
         <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
+            <h2 class="section-title">El Compositor</h2>
             <div class="about-content">
                 <div>
-                    <p>Soy un compositor y blogger musical apasionado, con base en Caracas, Venezuela. Llevo años creando letras e historias hechas melodías, adaptándome a las necesidades de cada artista para llevar su propuesta musical al siguiente nivel.</p>
+                    <p>Soy Carlos Luna, compositor radicado en Caracas, Venezuela. Mi pasión es dar vida a historias a través de las letras, rompiendo las barreras de los géneros musicales.</p>
                 </div>
                 <div class="stat-box">
-                    <h3>+150</h3>
+                    <h3>150+</h3>
                     <p>Temas Compuestos</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Caracas</h3>
+                    <p>Origen</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN CATÁLOGO -->
+    <!-- CATÁLOGO MUSICAL -->
     <section class="catalog" id="catalog">
         <div class="container">
-            <h2 class="section-title">Mi Catálogo Musical</h2>
+            <h2 class="section-title">Catálogo Musical</h2>
             <div class="genres-grid">
                 
                 <div class="genre-card">
-                    <h3>Urbano & Reggaetón</h3>
-                    <p>Ritmos modernos, letras pegajosas y comerciales listas para discoteca.</p>
-                    <a href="#" class="video-link" target="_blank">Ver videos en TikTok</a>
+                    <h3>Reggaetón & Urbano</h3>
+                    <p>Flow moderno y letras comerciales.</p>
+                    <a href="https://vt.tiktok.com/ZSx8wyh2b/" class="video-link" target="_blank">Ver videos en TikTok</a>
                 </div>
 
                 <div class="genre-card">
-                    <h3>Salsa & Merengue</h3>
-                    <p>Salsa brava, romántica y ritmos tropicales con todo el sabor caribeño.</p>
-                    <a href="#" class="video-link" target="_blank">Ver videos en TikTok</a>
+                    <h3>Salsa & Tropical</h3>
+                    <p>El sabor y la clave del Caribe.</p>
+                    <a href="https://vt.tiktok.com/ZSx8wyh2b/" class="video-link" target="_blank">Ver videos en TikTok</a>
                 </div>
 
                 <div class="genre-card">
-                    <h3>Baladas & Romántico</h3>
-                    <p>Letras profundas que conectan con el corazón y el sentimiento.</p>
-                    <a href="#" class="video-link" target="_blank">Ver videos en TikTok</a>
+                    <h3>Baladas</h3>
+                    <p>Poesía hecha canción.</p>
+                    <a href="https://vt.tiktok.com/ZSx8wnu6j/" class="video-link" target="_blank">Ver videos en TikTok</a>
                 </div>
 
                 <div class="genre-card">
-                    <h3>Música Llanera & Vallenato</h3>
-                    <p>Historias del llano, joropo recio y vallenato rompe venas con identidad propia.</p>
-                    <a href="#" class="video-link" target="_blank">Ver videos en TikTok</a>
+                    <h3>Llanera & Vallenato</h3>
+                    <p>Identidad y sentimiento venezolano.</p>
+                    <a href="https://vt.tiktok.com/ZSx8wGWyx/" class="video-link" target="_blank">Ver videos en TikTok</a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN CONTACTO -->
+    <!-- CONTACTO -->
     <section class="contact" id="contacto">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <h2 class="section-title">Contacto Profesional</h2>
             <div class="contact-info">
-                <p>¿Quieres adquirir alguna de mis letras, solicitar un tema personalizado o colaborar en un proyecto?</p>
-                <p>¡Hablemos directamente y hagamos música!</p>
-                <a href="https://wa.me/584164295853" target="_blank" class="phone-btn">📲 Contactar por WhatsApp</a>
+                <p>Ubicación: Caracas, Venezuela</p>
+                <p>TikTok: @carloslunacompositor.52</p>
+                <p>WhatsApp: +58 416-6069567</p>
+                <a href="https://wa.me/584166069567" target="_blank" class="phone-btn">Escríbeme por WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <!-- PIE DE PÁGINA -->
+    <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Carlos Luna Compositor. Todos los derechos reservados. Caracas, Venezuela.</p>
+            <p>&copy; 2026 Carlos Luna Compositor | @carloslunacompositor.52</p>
         </div>
     </footer>
 
